@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from 'styled-components'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export const ProfileWrapper = styled.div`
   display: flex;
@@ -11,15 +12,8 @@ export const ProfileTitle = styled.h1``
 
 export const ProfileDescription = styled.p`
   line-height: 1.5rem;
+  white-space: pre-line;
   /* border: 1px solid red; */
-  margin: 0;
-`
-
-export const ProfileImage = styled.img`
-  /* border: 1px solid red; */
-  width: 5rem;
-  border-radius: 50%;
-  margin-right: 1rem;
 `
 
 // export const ProfileDescription2 = styled.p``

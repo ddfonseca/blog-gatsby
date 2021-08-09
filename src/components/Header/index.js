@@ -31,7 +31,7 @@ const Header = (props) => {
 
   return (
     <S.TituloWrapper>
-      <S.SearchLink to="/">
+      <S.SearchLink home to="/">
         <S.Titulo post={props.post} title="Voltar para Home">
           {title}
         </S.Titulo>

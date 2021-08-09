@@ -5,7 +5,7 @@ const queries = require('./src/utils/algolia_queries')
 module.exports = {
   siteMetadata: {
     title: `David Fonseca`,
-    description: `Bem-vindo ao que se passa na minha mente.<br /> Escrevo sobre códigos, livros e ideias.`,
+    description: `Bem-vindo ao que se passa na minha mente. Escrevo sobre códigos, livros e ideias.`,
     author: `@ddfonseca`,
     siteUrl: `https://www.davidfonseca.com.br`,
   },
