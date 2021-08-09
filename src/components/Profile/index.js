@@ -13,7 +13,6 @@ const Profile = () => {
       site {
         siteMetadata {
           description
-          # description2
         }
       }
     }

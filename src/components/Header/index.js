@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import * as S from './styled'
 
-import { Search } from '@styled-icons/boxicons-regular/Search'
-import { DarkTheme } from '@styled-icons/fluentui-system-filled/DarkTheme'
-
 const Header = (props) => {
   const {
     site: {
@@ -38,19 +35,14 @@ const Header = (props) => {
       </S.SearchLink>
 
       <S.Bloco2>
-        <S.Theme
-          title="Mudar o tema"
+        <S.DarkTheme
+          title="Mudar de tema"
           onClick={() => {
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
           }}
-        >
-          <DarkTheme />
-        </S.Theme>
+        />
         <S.SearchLink to="/search" title="Pesquisar">
-          <S.Search>
-            <Search />
-            {/* Pesquisar */}
-          </S.Search>
+          <S.Search title="Pesquisar" />
         </S.SearchLink>
       </S.Bloco2>
     </S.TituloWrapper>

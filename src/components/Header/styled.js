@@ -1,15 +1,7 @@
 import styled from 'styled-components'
+import { DarkTheme as Dark } from '@styled-icons/fluentui-system-filled/DarkTheme'
+import { Search as Sear } from '@styled-icons/boxicons-regular/Search'
 import { Link } from 'gatsby'
-
-export const SearchLink = styled(Link)`
-  color: var(--text);
-  text-decoration: none;
-  display: flex;
-
-  &:hover {
-    color: var(--link) !important;
-  }
-`
 
 export const TituloWrapper = styled.section`
   margin: 2.1rem 0;
@@ -18,25 +10,37 @@ export const TituloWrapper = styled.section`
   color: var(--text);
 `
 
+export const SearchLink = styled(Link)`
+  color: var(--text);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--link);
+  }
+`
+
+export const Bloco2 = styled.div`
+  display: flex;
+  align-items: center;
+`
+
 export const Titulo = styled.h1`
-  font-size: ${(props) => (props.post ? '1.3rem' : '1.5rem')};
+  font-size: ${({ post }) => (post ? '1.3rem' : '1.5rem')};
   /* color: var(--link); */
   /* color: white; */
 
   &:hover {
-    color: var(--link) !important;
+    color: var(--link);
   }
 `
-export const Bloco2 = styled.div`
-  display: flex;
-`
 
-export const Search = styled.div`
+export const Search = styled(Sear)`
   margin-right: 3rem;
   width: 1.5rem;
+  align-self: end;
 `
 
-export const Theme = styled.div`
+export const DarkTheme = styled(Dark)`
   width: 1.5rem;
   margin-right: 0.5rem;
   cursor: pointer;
@@ -45,5 +49,4 @@ export const Theme = styled.div`
     color: var(--link);
   }
 `
-
 export const MenuBarItem = styled.span``
