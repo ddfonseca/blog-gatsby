@@ -37,11 +37,13 @@ export const Titulo = styled.h1`
 export const Search = styled(Sear)`
   margin-right: 3rem;
   width: 1.5rem;
+  height: 1.5rem;
   align-self: end;
 `
 
 export const DarkTheme = styled(Dark)`
   width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.5rem;
   cursor: pointer;
 

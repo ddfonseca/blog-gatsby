@@ -27,8 +27,8 @@ const Profile = () => {
       <StaticImage
         src={profilePhoto}
         alt="Foto de David"
-        placeholder="blurred"
-        style={{ borderRadius: '50%', width: '5rem', marginRight: '1rem' }}
+        placeholder="tracedSVG"
+        className="profile-photo"
       />
       <S.ProfileDescription>{descriptionModified}</S.ProfileDescription>
     </S.ProfileWrapper>
