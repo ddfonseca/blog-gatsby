@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-
+// import '@fortawesome/fontawesome-svg-core/styles.css'
 import 'lazysizes'
 // require('prismjs/themes/dracula-prism')
 //import 'gatsby-prismjs-dracula'

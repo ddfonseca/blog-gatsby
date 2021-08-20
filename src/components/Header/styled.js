@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { DarkTheme as Dark } from '@styled-icons/fluentui-system-filled/DarkTheme'
 import { Search as Sear } from '@styled-icons/boxicons-regular/Search'
 import { Link } from 'gatsby'
+import { MoonFill } from '@styled-icons/bootstrap/MoonFill'
 
 export const TituloWrapper = styled.section`
   margin: 2.1rem 0;
@@ -40,8 +41,7 @@ export const Search = styled(Sear)`
   height: 1.5rem;
   align-self: end;
 `
-
-export const DarkTheme = styled(Dark)`
+export const DarkTheme = styled(MoonFill)`
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
@@ -51,4 +51,15 @@ export const DarkTheme = styled(Dark)`
     color: var(--link);
   }
 `
+
+// export const DarkTheme = styled(Dark)`
+//   /* width: 1.5rem;
+//   height: 1.5rem;
+//   margin-right: 0.5rem;
+//   cursor: pointer; */
+
+//   &:hover {
+//     color: var(--link);
+//   }
+// `
 export const MenuBarItem = styled.span``
