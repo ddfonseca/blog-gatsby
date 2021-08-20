@@ -4,7 +4,6 @@ import PostItem from '../PostItem'
 import * as S from './styled'
 
 const DisplayPosts = ({ allPosts }) => {
-  console.log(allPosts)
   return (
     <S.DisplayPostsWrapper>
       {allPosts.map(

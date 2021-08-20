@@ -1,13 +1,60 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import { borderAnimation } from './animation'
 
 export const PostItemLink = styled(Link)`
+  position: relative;
+  padding: 1rem;
   color: var(--text);
   text-decoration: none;
   display: flex;
 
+  /* border: 1px solid red; */
+  &:before {
+    transition: all 0.4s;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1%;
+
+    top: 50%;
+    left: 0;
+    border-color: rgba(200, 200, 200, 0);
+    border-style: solid;
+    border-width: 0 1px;
+  }
+  &:after {
+    transition: all 0.4s;
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    border-color: rgba(200, 200, 200, 0);
+    /* border-color: red; */
+    border-style: solid;
+    border-width: 1px 0;
+  }
+
   &:hover {
-    color: var(--link) !important;
+    /* color: var(--link) !important; */
+    /* outline: 1px solid var(--link);
+    animation: ${borderAnimation} 4s cubic-bezier(0.4, 0, 0.2, 1); */
+
+    &:after {
+      width: 100%;
+      border-color: var(--link);
+    }
+
+    &:before {
+      height: 100%;
+      /* margin-left: -50%; */
+      top: 0;
+      left: 0;
+      border-color: var(--link);
+    }
   }
   margin-bottom: 4rem;
 `

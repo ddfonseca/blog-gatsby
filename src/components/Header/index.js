@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import * as S from './styled'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import './style.css'
 
 const Header = (props) => {
   const {
@@ -38,26 +35,12 @@ const Header = (props) => {
       </S.SearchLink>
 
       <S.Bloco2>
-        {/* <FontAwesomeIcon
-          className="icon__"
-          icon={faMoon}
-          title="Mudar de tema"
-          onClick={() => {
-            window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
-          }}
-        />
-        <FontAwesomeIcon icon={faMagnifyingGlass} /> */}
         <S.DarkTheme
           onClick={() => {
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
           }}
         />
         <S.SearchLink to="/search" title="Pesquisar">
-          {/* <FontAwesomeIcon
-            icon={faMagnifyingGlass}
-            className="icon__"
-            title="Pesquisar"
-          /> */}
           <S.Search title="Pesquisar" />
         </S.SearchLink>
       </S.Bloco2>
