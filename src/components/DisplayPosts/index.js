@@ -16,7 +16,6 @@ const DisplayPosts = ({ allPosts }) => {
         }) => (
           <PostItem
             slug={slug}
-            // category={category}
             date={date}
             timeToRead={timeToRead}
             title={title}
