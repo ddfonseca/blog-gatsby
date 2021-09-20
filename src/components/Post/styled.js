@@ -50,6 +50,12 @@ export const MainContent = styled.section`
   }
 
   a {
+    color: inherit;
+    color: var(--link);
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   b,
