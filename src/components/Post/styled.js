@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { Time as T } from '@styled-icons/boxicons-regular/Time'
+
 import { Link } from 'gatsby'
 
 export const PostLink = styled(Link)`
@@ -62,4 +64,8 @@ export const MainContent = styled.section`
   strong {
     color: var(--link);
   }
+`
+
+export const Time = styled(T)`
+  width: calc(16px * 0.85);
 `

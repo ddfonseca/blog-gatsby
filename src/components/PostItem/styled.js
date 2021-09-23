@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { borderAnimation } from './animation'
+import { Time as T } from '@styled-icons/boxicons-regular/Time'
 
 export const PostItemLink = styled(Link)`
   position: relative;
@@ -9,7 +10,6 @@ export const PostItemLink = styled(Link)`
   text-decoration: none;
   display: flex;
 
-  /* border: 1px solid red; */
   &:before {
     transition: all 0.4s;
     position: absolute;
@@ -59,6 +59,10 @@ export const PostItemLink = styled(Link)`
   margin-bottom: 4rem;
 `
 
+export const Time = styled(T)`
+  width: calc(16px * 0.85);
+`
+
 export const PostItemWrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -78,6 +82,7 @@ export const PostItemTitle = styled.h1`
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  /* font-family: 'Merriweather'; */
 `
 
 export const PostItemDescription = styled.p`

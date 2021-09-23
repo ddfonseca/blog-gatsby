@@ -14,6 +14,7 @@
     "dracula-prism": "^2.1.3",
     "gatsby": "^3.4.0",
     "gatsby-plugin-algolia-search": "^0.5.7",
+    "gatsby-plugin-catch-links": "^3.14.0",
     "gatsby-plugin-fontawesome-css": "^1.1.0",
     "gatsby-plugin-gatsby-cloud": "^2.4.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -29,6 +30,7 @@
     "gatsby-remark-prismjs": "^5.1.0",
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-json": "^3.14.0",
     "gatsby-transformer-remark": "^4.1.0",
     "gatsby-transformer-sharp": "^3.11.0",
     "lazysizes": "^5.3.2",
@@ -39,7 +41,8 @@
     "react-helmet": "^6.1.0",
     "react-instantsearch-dom": "^6.11.2",
     "styled-components": "^5.3.0",
-    "styled-icons": "^10.35.0"
+    "styled-icons": "^10.35.0",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "prettier": "2.2.1"

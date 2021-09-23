@@ -1,7 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Search as Sear } from '@styled-icons/boxicons-regular/Search'
 import { Link } from 'gatsby'
 import { Moon } from '@styled-icons/heroicons-solid/Moon'
+import { Document } from '@styled-icons/fluentui-system-filled/Document'
 
 export const TituloWrapper = styled.section`
   margin: 2.1rem 0;
@@ -19,13 +20,16 @@ export const SearchLink = styled(Link)`
   }
 `
 
-export const Bloco2 = styled.div`
+export const Icons = styled.div`
   display: flex;
   align-items: center;
 `
 
 export const Titulo = styled.h1`
   font-size: ${({ post }) => (post ? '1.3rem' : '1.5rem')};
+  font-family: 'Merriweather';
+
+  /* font-family: 'Inconsolata', monospace; */
   /* color: var(--link); */
   /* color: white; */
 
@@ -34,21 +38,27 @@ export const Titulo = styled.h1`
   }
 `
 
-export const Search = styled(Sear)`
-  margin-right: 3rem;
+const cssIconBase = css`
   width: 1.5rem;
   height: 1.5rem;
-  align-self: end;
+`
+
+export const Search = styled(Sear)`
+  ${cssIconBase}/* margin-right: 3rem; */
 `
 export const DarkTheme = styled(Moon)`
-  width: 1.5rem;
-  height: 1.5rem;
+  ${cssIconBase}
   margin-right: 0.5rem;
-  cursor: pointer;
 
   &:hover {
+    cursor: pointer;
     color: var(--link);
   }
+`
+
+export const Portfolio = styled(Document)`
+  ${cssIconBase}
+  margin-right: 0.5rem;
 `
 
 export const MenuBarItem = styled.span``

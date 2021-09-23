@@ -3,17 +3,20 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
 * {
     /* font-family: 'Montserrat', sans-serif; */
+    margin: 0;
+    padding: 0;
 }
 
 h1, p {
     margin: 0;
 }
 h1 {
+
     font-family: 'Montserrat', sans-serif;
 }
 
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 body {
@@ -38,15 +41,18 @@ body.dark {
 }
 
 body.light {
-    --background: var(--white);
-    --link: #0096FF; 
+    /* --background: var(--white); */
+    --background: #E6E6E6;
+    /* --link: #153b3b; 
+    --link: #419D78;  */
+    --link: #297373; 
     --pagination: #0096FF; 
     --white: #f8f8f2;
     --h2: #bd93f9;
     --h3: #ff5555;
     --h4: #f1fa8c;
     --text: #2a2d43;
-    background-color: var(--white);
+    background-color: var(--background);
     color: var(--text)
 }
 `

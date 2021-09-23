@@ -34,8 +34,12 @@ const Header = (props) => {
         </S.Titulo>
       </S.SearchLink>
 
-      <S.Bloco2>
+      <S.Icons>
+        <S.SearchLink to="/portfolio" title="Portfolio">
+          <S.Portfolio />
+        </S.SearchLink>
         <S.DarkTheme
+          title="Mudar de tema"
           onClick={() => {
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
           }}
@@ -43,7 +47,7 @@ const Header = (props) => {
         <S.SearchLink to="/search" title="Pesquisar">
           <S.Search title="Pesquisar" />
         </S.SearchLink>
-      </S.Bloco2>
+      </S.Icons>
     </S.TituloWrapper>
   )
 }

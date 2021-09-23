@@ -5,9 +5,9 @@ const queries = require('./src/utils/algolia_queries')
 module.exports = {
   siteMetadata: {
     title: `David Fonseca`,
-    description: `Bem-vindo ao que se passa na minha mente. Escrevo sobre códigos, livros e ideias.`,
+    description: `Bem-vindo ao que se passa na minha mente. Escrevo sobre códigos 💻, livros 📚 e ideias 💡.`,
     author: `@ddfonseca`,
-    siteUrl: `https://www.davidfonseca.com.br`,
+    siteUrl: `https://davidfonseca.com.br`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,6 +31,13 @@ module.exports = {
       options: {
         name: `posts`,
         path: `${__dirname}/posts`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/portfolio`,
       },
     },
     {
@@ -95,11 +102,13 @@ module.exports = {
           `Montserrat\:300,400,900`,
           `Merriweather\:300,400,900`,
           'Roboto:400',
+          'Inconsolata:300,400,700',
         ],
         display: 'swap',
       },
     },
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-catch-links`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

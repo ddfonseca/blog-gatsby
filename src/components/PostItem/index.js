@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Time } from '@styled-icons/boxicons-regular/Time'
-
 import * as S from './styled'
 
 const PostItem = ({ slug, title, date, timeToRead, description }) => (
@@ -10,7 +8,7 @@ const PostItem = ({ slug, title, date, timeToRead, description }) => (
     <S.PostItemWrapper>
       <S.PostItemTitle>{title}</S.PostItemTitle>
       <S.PostItemDate>
-        {date} <Time width="0.85rem" /> {timeToRead} min de leitura
+        {date} <S.Time /> {timeToRead} min de leitura
       </S.PostItemDate>
       <S.PostItemDescription>{description}</S.PostItemDescription>
     </S.PostItemWrapper>

@@ -7,7 +7,6 @@ import RecommendedPosts from '../components/RecommendedPosts'
 
 import * as S from '../components/Post/styled'
 import '../components/Post/styled.css'
-import { Time } from '@styled-icons/boxicons-regular/Time'
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -25,8 +24,7 @@ const BlogPost = ({ data, pageContext }) => {
       <S.PostHeader>
         <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
         <S.PostDate>
-          <Time width="0.85rem" /> {post.frontmatter.date} • {post.timeToRead}{' '}
-          min de leitura
+          <S.Time /> {post.frontmatter.date} • {post.timeToRead} min de leitura
         </S.PostDate>
         {/* <S.PostDescription>{post.frontmatter.description}</S.PostDescription> */}
       </S.PostHeader>
