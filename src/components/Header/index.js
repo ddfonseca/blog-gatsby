@@ -35,6 +35,9 @@ const Header = (props) => {
       </S.SearchLink>
 
       <S.Icons>
+        <S.SearchLink to="/contato" title="Contato">
+          <S.ContactIcon />
+        </S.SearchLink>
         <S.SearchLink to="/portfolio" title="Portfolio">
           <S.Portfolio />
         </S.SearchLink>

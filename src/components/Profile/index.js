@@ -21,6 +21,7 @@ const Profile = () => {
   const profilePhoto = '../../images/profile-photo.jpg'
 
   const descriptionModified = description.replace('.', '.\n')
+  // const descriptionModified = `Olá 👋! Sou o David. \n Escrevo sobre códigos 💻, livros 📚 e ideias 💡.`
 
   return (
     <S.ProfileWrapper>

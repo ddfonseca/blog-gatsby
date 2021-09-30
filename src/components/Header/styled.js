@@ -3,6 +3,7 @@ import { Search as Sear } from '@styled-icons/boxicons-regular/Search'
 import { Link } from 'gatsby'
 import { Moon } from '@styled-icons/heroicons-solid/Moon'
 import { Document } from '@styled-icons/fluentui-system-filled/Document'
+import { ContactPage } from '@styled-icons/material/ContactPage'
 
 export const TituloWrapper = styled.section`
   margin: 2.1rem 0;
@@ -20,11 +21,6 @@ export const SearchLink = styled(Link)`
   }
 `
 
-export const Icons = styled.div`
-  display: flex;
-  align-items: center;
-`
-
 export const Titulo = styled.h1`
   font-size: ${({ post }) => (post ? '1.3rem' : '1.5rem')};
   font-family: 'Merriweather';
@@ -37,18 +33,26 @@ export const Titulo = styled.h1`
     color: var(--link);
   }
 `
+export const Icons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+`
 
 const cssIconBase = css`
   width: 1.5rem;
   height: 1.5rem;
 `
 
+export const ContactIcon = styled(ContactPage)`
+  ${cssIconBase}
+`
+
 export const Search = styled(Sear)`
-  ${cssIconBase}/* margin-right: 3rem; */
+  ${cssIconBase}
 `
 export const DarkTheme = styled(Moon)`
   ${cssIconBase}
-  margin-right: 0.5rem;
 
   &:hover {
     cursor: pointer;
@@ -58,7 +62,6 @@ export const DarkTheme = styled(Moon)`
 
 export const Portfolio = styled(Document)`
   ${cssIconBase}
-  margin-right: 0.5rem;
 `
 
 export const MenuBarItem = styled.span``
