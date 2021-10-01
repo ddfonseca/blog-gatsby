@@ -1,31 +1,30 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-* {
+*, *::after, *::before {
     /* font-family: 'Montserrat', sans-serif; */
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 1.1rem;
 }
 
 h1, p {
     margin: 0;
 }
 h1 {
-
     font-family: 'Montserrat', sans-serif;
 }
 
-html {
-    font-size: 16px;
-}
-
 body {
-    /* font-size: 18px; */
+    font-family: 'Roboto', sans-serif;
     color: white;
 }
 p {
     /* font-family: 'Merriweather', serif; */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     /* color: rgba(255, 255, 255, 0.88); */
 }
 

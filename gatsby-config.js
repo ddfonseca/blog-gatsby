@@ -13,13 +13,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     // needs to be the first to work with gatsby-remark-images
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `uploads`,
-    //     path: `${__dirname}/static/assets/img`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/static/assets/img`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
