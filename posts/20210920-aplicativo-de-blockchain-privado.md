@@ -12,7 +12,7 @@ O curso é dividido em 4 módulos, em cada módulo um projeto.
 
 - Blockchain Fundamentals (04/10)
   - Create your own private blockchain
-- Etherem Smart Contracts, Tokens and Dapps (25/10)
+- Ethereum Smart Contracts, Tokens and Dapps (25/10)
   - Build crypstar dapp on ethereum
 - Blockchain Architecture (15/11)
   - Ethereum Dapp for tracking items through supply chain
